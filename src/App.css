@@ -1,0 +1,105 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo img {
+  height: 30px;
+}
+
+.search-bar {
+  display: flex;
+  width: 60%;
+}
+
+.search-bar .form-control {
+  border-radius: 20px 0 0 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  height: 38px;
+}
+
+.search-bar .btn {
+  border-radius: 0 20px 20px 0;
+  padding: 5px 20px;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 40px;  /* Reduced the space between navbar and category filters */
+  padding: 0 20px;
+}
+
+/* Category Filters */
+.category-filters {
+  display: flex;
+  justify-content: center;  /* Center the filters */
+  overflow-x: auto;
+  margin-bottom: 10px;  /* Reduced space between filters and video grid */
+  padding: 10px 0;
+}
+
+.category-btn {
+  border: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #555;
+  font-weight: 500;
+}
+
+.category-btn.active {
+  color: #fff;
+  background-color: #cc0000;
+  border-radius: 20px;
+}
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.video-info {
+  padding: 10px;
+}
+
+.video-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.video-channel {
+  font-size: 14px;
+  color: #666;
+}
